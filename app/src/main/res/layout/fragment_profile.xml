@@ -1,0 +1,170 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProfileFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <!-- Profile Image -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:cardCornerRadius="120dp"
+            android:layout_marginTop="40dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:id="@+id/profileiv"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/background"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+    <!-- Display Name -->
+    <TextView
+        android:id="@+id/displayNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Email -->
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uploaded Recipe"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp"/>
+    <!-- FAQ -->
+    <LinearLayout
+        android:id="@+id/faqLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="16dp"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FAQ"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrowright"
+            app:tint="@android:color/black"/>
+
+    </LinearLayout>
+
+    <!-- Terms of Service -->
+    <LinearLayout
+        android:id="@+id/termsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Terms of Service"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrowright"
+            app:tint="@android:color/black"/>
+
+    </LinearLayout>
+
+    <!-- Privacy Policy -->
+    <LinearLayout
+        android:id="@+id/privacyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Privacy Policy"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrowright"
+            app:tint="@android:color/black"/>
+
+    </LinearLayout>
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="32dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/light_blue_600"
+        android:textColor="@android:color/white"/>
+
+
+    </LinearLayout>
+</FrameLayout>

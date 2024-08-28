@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            app:cardCornerRadius="999dp">
+
+            <ImageView
+                android:id="@+id/robotiv"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/robotchef"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/chatBotTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardview"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Chef Chat Bot"
+            android:textSize="30dp"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <!-- RecyclerView to display chat messages -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutUserInput"
+        android:layout_below="@id/topLayout"
+        android:padding="8dp" />
+
+    <!-- User input layout -->
+    <RelativeLayout
+        android:id="@+id/layoutUserInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:padding="8dp">
+
+        <!-- EditText for user input -->
+        <EditText
+            android:id="@+id/editTextUserInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/buttonSend"
+            android:hint="Type a message..."
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_background"
+            android:singleLine="true" />
+
+        <!-- Send button -->
+        <ImageButton
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_send"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@color/light_blue_600">
+
+        </ImageButton>
+    </RelativeLayout>
+
+</RelativeLayout>

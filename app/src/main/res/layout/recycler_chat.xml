@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvmessage"
+        android:elevation="0dp"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:background="@drawable/button_background"
+        android:layout_height="wrap_content"
+        android:text="I'm AI Chef assistant"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

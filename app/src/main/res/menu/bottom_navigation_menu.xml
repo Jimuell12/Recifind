@@ -1,0 +1,20 @@
+<!-- bottom_navigation_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_add"
+        android:title="Home"
+        android:iconTint="@color/black"/>
+    <item
+        android:id="@+id/menu_bookmark"
+        android:icon="@drawable/ic_upload"
+        android:title="Upload" />
+    <item
+        android:id="@+id/menu_bot"
+        android:icon="@drawable/ic_chatbot"
+        android:title="Bot"/>
+    <item
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Account" />
+</menu>

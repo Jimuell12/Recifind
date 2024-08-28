@@ -1,0 +1,88 @@
+<!-- FAQ Fragment Layout - fragment_faq.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Frequently Asked Questions"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <!-- Question 1 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q: How can I upload my recipe?"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A: To upload your recipe, go to the 'Upload Recipe' section in the app. Fill in the required details such as recipe name, ingredients, instructions, and an optional image. Finally, click on the 'Upload' button to share your recipe with others." />
+
+            <!-- Question 2 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q: Can I edit or delete my uploaded recipes?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A: Yes, you can edit or delete your uploaded recipes. In the app, go to the 'My Recipes' section, find the recipe you want to edit or delete, and use the provided options to make changes as needed." />
+
+            <!-- Question 3 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q: How can I search for recipes?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A: You can search for recipes using the search bar at the top of the app. Enter keywords related to the recipe you're looking for, such as ingredients, cuisine, or dish name, and the app will display relevant results." />
+
+            <!-- Question 4 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q: How does the AI bot work?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A: The AI bot is designed to answer your food-related questions. Simply type your question in the chat interface provided in the app, and the AI bot will provide you with relevant information and suggestions based on its knowledge." />
+
+            <!-- Add more questions and answers as needed -->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">recifind</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="prompt">You are RecipeGpt, a recipe assistant that only answers questions related to recipes and foods. If you get questions that\'s not about recipe or food respond with the following: "Sorry as a Recipe Assistant I can only provide assistance about recipe or food, feel free to ask questions I'm able to answer.</string>
+    <string name="default_web_client_id">172378194380-9og4gj52436f71u4mcejls6g0ctob41r.apps.googleusercontent.com</string>
+    <string name="terms_of_service_content">
+    Terms of Service\n
+    \n
+    Welcome to Recify! These terms and conditions outline the rules and regulations for the use of our mobile application.\n
+    \n
+    By accessing or using the Recify app, you agree to be bound by these terms and conditions. If you disagree with any part of these terms and conditions, you must not use our app.\n
+    \n
+    1. Intellectual Property Rights\n
+    The content, features, and functionality provided by Recify are owned by us and are protected by international copyright, trademark, and other intellectual property laws.\n
+    \n
+    2. User Content\n
+    By uploading, posting, or submitting any content on Recify, you grant us a non-exclusive, royalty-free, worldwide license to use, modify, publicly perform, publicly display, reproduce, and distribute such content.\n
+    \n
+    3. Prohibited Activities\n
+    When using Recify, you agree not to:\n
+    - Violate any applicable laws or regulations\n
+    - Post or transmit any unlawful, defamatory, offensive, or harmful content\n
+    - Engage in any unauthorized use of our app\n
+    - Interfere with the security or functionality of our app\n
+    \n
+    4. Limitation of Liability\n
+    Recify and its team shall not be held liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use or inability to use our app.\n
+    \n
+    5. Governing Law\n
+    These terms and conditions are governed by and construed in accordance with the laws of your country.\n
+    \n
+    </string>
+    <string name="privacy_policy_title">Privacy Policy</string>
+    <string name="privacy_policy_content">
+    Your privacy is important to us. It is Recify\'s policy to respect your privacy regarding any information we may collect from you through our app.\n
+    \n
+    We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we\'re collecting it and how it will be used.\n
+    \n
+    We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we\'ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use, or modification.\n
+    \n
+    We don\'t share any personally identifying information publicly or with third parties, except when required to by law.\n
+    \n
+    Our app may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites and cannot accept responsibility or liability for their respective privacy policies.\n
+    \n
+    Your continued use of our app will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.\n
+    \n
+    This policy is effective as of the date specified and may be updated or modified at any time, so please review it frequently.
+</string>
+
+
+</resources>

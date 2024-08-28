@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.IngredientsFragment">
+
+    <!-- Left Arrow -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/arrowcv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:cardCornerRadius="999dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/leftArrowImageView"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_arrowleft" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Recipe Name -->
+    <TextView
+        android:id="@+id/recipeNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Salmon Sushi Matcha"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+        <WebView
+            android:id="@+id/ytvideo"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/recipeNameTextView"/>
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/instructionsrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ytvideo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
+</RelativeLayout>
