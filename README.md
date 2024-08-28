@@ -14,7 +14,7 @@ Recifind is an innovative Android application designed to make your cooking expe
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/recifind.git
+   git clone https://github.com/Jimuell12/Recifind.git
    ```
 2. Open the project in Android Studio.
 3. Build and run the app on your Android device or emulator.
